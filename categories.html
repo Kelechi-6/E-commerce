@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keecee Collection - Premium E-commerce Store</title>
+    <link rel="stylesheet" href="categories_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-image">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Keecee Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Keecee</h1>
+                        <h2>Collection</h2>
+                    </div>
+                </div>
+                
+                <nav>
+            <div class="navbar">
+                <a href="first_page.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="categories.html#description">About</a>
+                <a href="#">Event</a>
+            </div>
+        </nav>
+                
+                <div class="header-actions">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Men's Wear Section -->
+            <section class="product-section" id="men">
+                <h2 class="section-title">Men's Wear</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Hoodie">
+                        </div>
+                        <div class="product-info">
+                            <h3>Hoodie</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦17,000</span>
+                                <span class="old-price">₦20,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Hoodie', 17000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Black Cool Polo">
+                        </div>
+                        <div class="product-info">
+                            <h3>Black Cool Polo</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦6,000</span>
+                                <span class="old-price">₦10,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Black Cool Polo', 6000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Elegant Suit">
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Suit</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦25,000</span>
+                                <span class="old-price">₦28,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Elegant Suit', 25000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Ceremonial Suit">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ceremonial Suit</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦24,000</span>
+                                <span class="old-price">₦26,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Ceremonial Suit', 24000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Nike Canvas">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nike Canvas</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦28,000</span>
+                                <span class="old-price">₦30,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Nike Canvas', 28000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Women's Wear Section -->
+            <section class="product-section" id="women">
+                <h2 class="section-title">Women's Wear</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Handbag">
+                        </div>
+                        <div class="product-info">
+                            <h3>Handbag</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦20,000</span>
+                                <span class="old-price">₦22,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Handbag', 20000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Elegant Gown">
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Gown</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦25,000</span>
+                                <span class="old-price">₦26,500</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Elegant Gown', 25000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Comfortable Crop-top">
+                        </div>
+                        <div class="product-info">
+                            <h3>Comfortable Crop-top</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦5,000</span>
+                                <span class="old-price">₦6,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Comfortable Crop-top', 5000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Designer Heels">
+                        </div>
+                        <div class="product-info">
+                            <h3>Designer Heels</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦25,000</span>
+                                <span class="old-price">₦27,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Designer Heels', 25000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Premium Handbag">
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Handbag</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦15,000</span>
+                                <span class="old-price">₦16,500</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Premium Handbag', 15000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Children's Wear Section -->
+            <section class="product-section" id="children">
+                <h2 class="section-title">Children's Wear</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Pink Dress">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pink Dress</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦8,000</span>
+                                <span class="old-price">₦9,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Pink Dress', 8000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Kids Clothset">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kids Clothset</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦10,000</span>
+                                <span class="old-price">₦11,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Kids Clothset', 10000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="School Bag">
+                        </div>
+                        <div class="product-info">
+                            <h3>School Bag</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦10,000</span>
+                                <span class="old-price">₦13,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('School Bag', 10000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Home Decoration Section -->
+            <section class="product-section" id="decoration">
+                <h2 class="section-title">Home Decoration</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Home Figurine">
+                        </div>
+                        <div class="product-info">
+                            <h3>Home Figurine</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦30,000</span>
+                                <span class="old-price">₦32,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Home Figurine', 30000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Cylinder Light">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cylinder Light</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦110,000</span>
+                                <span class="old-price">₦112,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Cylinder Light', 110000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Chandelier">
+                        </div>
+                        <div class="product-info">
+                            <h3>Chandelier</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦70,000</span>
+                                <span class="old-price">₦72,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Chandelier', 70000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Supermarket Section -->
+            <section class="product-section" id="supermarket">
+                <h2 class="section-title">Supermarket</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Milo 800g">
+                        </div>
+                        <div class="product-info">
+                            <h3>Milo 800g</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦8,000</span>
+                                <span class="old-price">₦8,500</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Milo 800g', 8000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Big Bull Rice 25kg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Big Bull Rice 25kg</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦50,750</span>
+                                <span class="old-price">₦53,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Big Bull Rice 25kg', 50750)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Luxury Perfume">
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Collection Perfume</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦50,750</span>
+                                <span class="old-price">₦53,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Luxury Collection Perfume', 50750)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gadgets Section -->
+            <section class="product-section" id="gadgets">
+                <h2 class="section-title">Gadgets</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Noise Cancelling Headphone">
+                        </div>
+                        <div class="product-info">
+                            <h3>Noise Cancelling Headphone</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦20,000</span>
+                                <span class="old-price">₦22,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Noise Cancelling Headphone', 20000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Apple Watch SE">
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple Watch SE</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦21,000</span>
+                                <span class="old-price">₦23,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Apple Watch SE', 21000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=250" alt="Coffee Bean Grinder">
+                        </div>
+                        <div class="product-info">
+                            <h3>Coffee Bean Grinder</h3>
+                            <div class="price-section">
+                                <span class="current-price">₦50,000</span>
+                                <span class="old-price">₦51,000</span>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart('Coffee Bean Grinder', 50000)">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Sign up for the latest deals & drops!</h2>
+                <p>Be the first to know about our latest arrivals and exclusive offers.</p>
+                
+                <form class="signup-form" id="signupForm">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="tel" name="phone" placeholder="Phone number" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                
+                <p class="social-text">You can also message us on:</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+                
+                <button class="scroll-to-top" onclick="scrollToTop()" aria-label="Scroll to top">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
