@@ -1,72 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Keecee Collection | Premium E-commerce Store</title>
     <link rel="stylesheet" href="shopping_page.css">
-    <title>E-commerce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="head">
-            <h1>Shopping simplified</h1>
-        <nav>
-            <div class="navbar">
-                <a href="first_page.html">Home</a>
-                <a href="categories.html">Categories</a>
-                <a href="categories.html#description">About</a>
-                <a href="#">Event</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Keecee</h1>
+                <span>Collection</span>
             </div>
-        </nav>
-    </div>
-        
-            
-    <div class="advice">
-        <p>Where should you start if you want to find your next key customer? <br>
-            "In the book, I offer a number of key insights on how to find them. <br>
-            Check it out for more ideas on ways to grow your business.</p>
-            <button> <a href="#"> GET THE BOOK</a></button>
-    </div>
-    </div>
-    <div class="categories">
-        <h2>Your favourite categories</h2>
-    <div class="gallery">
-        <a href="categories.html#man"> <img src="image/suit.jpg"> </a>
-        <div class="desc"> Men's wear</div>
-    </div>
-    <div class="gallery">
-        <a href="categories.html#woman"> <img src="image/women_wear.jpg"> </a>
-        <div class="desc">Women's wear</div>
-    </div>
-    <div class="gallery">
-        <a href="categories.html#child"> <img src="image/children_wear.jpg"> </a>
-        <div class="desc">Children wear</div>
-    </div>
-    <div class="gallery">
-        <a href="categories.html#decoration"> <img src="image/home_decoration.jpg"> </a>
-        <div class="desc">Home Decoration</div>
-    </div>
-    <div class="gallery">
-        <a href="categories.html#market"> <img src="image/fruits.jpg"> </a>
-        <div class="desc">Supermarket</div>
-    </div>
-    <div class="gallery">
-        <a href="categories.html#appliances"> <img src="image/gadget.jpg"> </a>
-        <div class="desc">Gadget</div>
-    </div>
-    </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="categories.html" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#benefit" class="nav-link">Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <div class="fact">
-        <p id="question">Who knew
-            <br> shopping could
-            <br> be this easy?
-        </p>
-            <div class="brand">
-                <h3>Keecee Collections</h3>
-                <p>Zero <b>lines</b> </p>
-                <p>Zero <b>stress</b> </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Shopping Simplified</h1>
+                <p class="hero-subtitle">Discover premium products at unbeatable prices</p>
             </div>
-    </div>
-    
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <h2>Discover Your Next Favorite Product</h2>
+                    <p>Where should you start if you want to find your next key customer? In our curated collection, we offer a number of key insights on how to find premium products that match your style. Check out our exclusive deals and discover amazing ways to enhance your lifestyle.</p>
+                    <button class="cta-button">
+                        <i class="fas fa-book"></i>
+                        Explore Collection
+                    </button>
+                </div>
+                <div class="featured-image">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Featured Products">
+                    <div class="floating-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Favorite Categories</h2>
+                <p>Explore our carefully curated product categories</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/suit.jpg" alt="Men's Wear">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Men's Wear</h3>
+                                <p>Stylish clothing & accessories</p>
+                                <a href="categories.html#men" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/women_wear.jpg" alt="Women's Wear">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Women's Wear</h3>
+                                <p>Elegant fashion & beauty</p>
+                                <a href="categories.html#women" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/children_wear.jpg" alt="Children's Wear">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Children's Wear</h3>
+                                <p>Comfortable kids clothing</p>
+                                <a href="categories.html#children" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/home_decoration.jpg" alt="Home Decoration">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Home Decoration</h3>
+                                <p>Beautiful home essentials</p>
+                                <a href="categories.html#decoration" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/fruits.jpg" alt="Supermarket">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Supermarket</h3>
+                                <p>Fresh groceries & essentials</p>
+                                <a href="categories.html#supermarket" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="image/gadget.jpg" alt="Gadgets">
+                        <div class="category-overlay">
+                            <div class="category-info">
+                                <h3>Gadgets</h3>
+                                <p>Latest tech & electronics</p>
+                                <a href="categories.html#gadgets" class="category-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Shop Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefit">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Who knew shopping could be this easy?</h2>
+                    <p>Experience the future of online shopping with our streamlined platform designed for your convenience.</p>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Shopping</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-brand">
+                    <div class="brand-card">
+                        <h3>Keecee Collections</h3>
+                        <div class="brand-features">
+                            <div class="feature">
+                                <span class="feature-label">Zero</span>
+                                <span class="feature-value">Lines</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">Zero</span>
+                                <span class="feature-value">Stress</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-label">100%</span>
+                                <span class="feature-value">Satisfaction</span>
+                            </div>
+                        </div>
+                        <button class="brand-cta">
+                            <i class="fas fa-shopping-bag"></i>
+                            Start Shopping
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with Latest Deals</h2>
+                    <p>Subscribe to our newsletter and never miss out on exclusive offers and new arrivals.</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Keecee Collection</h3>
+                        <p>Your trusted partner for premium shopping experience with quality products and exceptional service.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="categories.html#men">Men's Wear</a></li>
+                        <li><a href="categories.html#women">Women's Wear</a></li>
+                        <li><a href="categories.html#children">Children's Wear</a></li>
+                        <li><a href="categories.html#decoration">Home Decoration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +234-903-328-2350</p>
+                        <p><i class="fas fa-envelope"></i> support@keeceecollection.com</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Customer Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Keecee Collection. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
