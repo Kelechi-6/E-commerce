@@ -115,6 +115,10 @@ body {
 .cart-icon:hover {
   color: #ff6b35;
 }
+.cart-icon a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .cart-count {
   position: absolute;
